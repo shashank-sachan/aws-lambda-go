@@ -66,6 +66,8 @@ type APIGatewayHTTPRequestContext struct {
 	Identity   APIGatewayRequestIdentity `json:"identity"`
 	Authorizer map[string]interface{}    `json:"authorizer"`
 	APIID      string                    `json:"apiId"` // The API Gateway rest API Id
+	HTTPMethod string                    `json:"httpMethod"`
+	Path       string                    `json:"path"`
 }
 
 // APIGatewayRequestIdentity contains identity information for the request caller.
