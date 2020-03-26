@@ -72,6 +72,8 @@ type APIGatewayV2RequestContext struct {
 	DomainPrefix string                    `json:"domainPrefix"`
 	Time         string                    `json:"time"`
 	TimeEpoch    int64                     `json:"timeEpoch"`
+	HTTPMethod   string                    `json:"httpMethod"`
+	Path         string                    `json:"path"`
 }
 
 // APIGatewayRequestIdentity contains identity information for the request caller.
